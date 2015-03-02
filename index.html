@@ -1,0 +1,96 @@
+<html>
+<head>
+<title> Lab 14 </title>
+<script src="processing-1.4.1.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+/* @pjs globalKeyEvents = "true"; */
+
+
+
+
+
+void setup()
+{  
+
+
+}  
+
+void draw()
+{
+
+	
+size(800,800);  
+background(0,0,0);
+frameRate( 30 );		
+
+
+noStroke();
+fill(125,125,125);
+rect(50,150,700,500);
+
+fill(255,255,255)
+ellipse(85,185,70,70);
+ellipse(155,185,70,70);
+ellipse(225,185,70,70);
+ellipse(295,185,70,70);
+ellipse(365,185,70,70);
+ellipse(435,185,70,70);
+ellipse(505,185,70,70);
+ellipse(575,185,70,70);
+ellipse(645,185,70,70);
+ellipse(715,185,70,70);
+
+text("1",85,300); 
+text("2",155,300); 
+text("3",225,300); 
+text("4",295,300); 
+text("5",365,300); 
+text("6",435,300); 
+text("7",505,300); 
+text("8",575,300); 
+text("9",645,300); 
+text("10",715,300); 
+
+text("11",85,400); 
+text("12",155,400); 
+text("13",225,400); 
+text("14",295,400); 
+text("15",365,400); 
+text("16",435,400); 
+text("17",505,400); 
+text("18",575,400); 
+text("19",645,400); 
+text("20",715,400); 
+
+text("21",85,500); 
+text("22",155,500); 
+text("23",225,500); 
+text("24",295,500); 
+text("25",365,500); 
+text("26",435,500); 
+text("27",505,500); 
+text("28",575,500); 
+text("29",645,500); 
+text("30",715,500); 
+
+	if(mousePressed == true && mouseButton == RIGHT) 
+	{
+		point(mouseX, mouseY);
+		fill(255,255,255);
+		textSize(12);
+		text(mouseX + " " +"," + " "+ mouseY, mouseX-26,mouseY-10); 
+	}
+
+	
+}
+
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
